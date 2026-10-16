@@ -24,3 +24,14 @@ The draft post links to the planned Space. Publish and verify the Space and its 
 Limited exact-name Android searches on October 17 found no independently verified earlier exact-model Android APK in the inspected results. This is not an exhaustive survey or proof of precedence. Use “an early Android implementation,” with no ranking claim. PrismML already provides Android-capable runtime code; do not imply GDA Labs originated the underlying engine's Android support.
 
 Public GitHub publication is now authorized for the independent repository https://github.com/gdalabs/bonsai-local-android . Keep MeshMind private. The website project card should link to this dedicated repository after publication.
+
+
+## Verified publication results
+
+- Dedicated source repository: https://github.com/gdalabs/bonsai-local-android — PUBLIC, initial source commit cbbc96b. Unauthenticated raw README access returned HTTP 200.
+- Public APK/source release: https://github.com/gdalabs/bonsai-local-android/releases/tag/v0.2.2-preview — six assets uploaded. Both APK digests match the tested private preview artifacts. Source ZIP contains the corresponding app and the pinned native source snapshot.
+- Official website: https://gdalabs.dev/ — deployed through the existing Cloudflare Pages project gdalabs-website, from website commit af1ac1b. Production HTTP 200 confirmed the upper-left link, first project card and dedicated repository URL. GitHub Pages is an additional deployment, not the custom domain's production path.
+- Local browser checks: Chromium 155.0.8059.39, Space and website at widths 1440/390/360; all six checks passed with no horizontal overflow or page errors. These are website checks, not Android-device screenshots/tests.
+- Independent public-source clone and all native source SHA-256 checks passed. App/native sources match tested 0.2.2; no complete new public-clone APK rebuild was run.
+- HF Space upload bundle: release asset Bonsai-Local-0.2.2-HF-Space-upload.zip. Its files/checksums were verified by the publisher's check-only mode. Space and HF Post remain unpublished because standard HF authentication is absent.
+- Announcement draft is readable at https://github.com/gdalabs/bonsai-local-android/blob/main/docs/HF_POST.md . This is a public draft, not a published HF Post; the HF Post URL remains unassigned.
