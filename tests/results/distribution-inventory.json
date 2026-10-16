@@ -1,0 +1,138 @@
+{
+  "scope": "Files, not installed storage or RAM",
+  "artifacts": [
+    {
+      "file": "ARCHITECTURE.md",
+      "bytes": 1666,
+      "MB_decimal": 0.002,
+      "MiB_binary": 0.002,
+      "sha256": "ff1a7b166964685fad7eebf3d5e98152b0824bf0ab3ddc917ffb24c13869f6d2"
+    },
+    {
+      "file": "Apache-2.0.txt",
+      "bytes": 10173,
+      "MB_decimal": 0.01,
+      "MiB_binary": 0.01,
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "file": "BUILD.md",
+      "bytes": 1880,
+      "MB_decimal": 0.002,
+      "MiB_binary": 0.002,
+      "sha256": "15973060e5d4b6d4871086dac8c2cd4e91e16f7e8ec1cdc465aa0dd7db016354"
+    },
+    {
+      "file": "Bonsai-Local-0.2.0-arm64-Q2_0-bundled-preview.apk",
+      "bytes": 575632610,
+      "MB_decimal": 575.633,
+      "MiB_binary": 548.966,
+      "sha256": "21d5aeb1b83350761ec619c2114e8f58bd11a71c0d8032bc4575073539db255d"
+    },
+    {
+      "file": "Bonsai-Local-0.2.0-arm64-small-preview.apk",
+      "bytes": 28942476,
+      "MB_decimal": 28.942,
+      "MiB_binary": 27.602,
+      "sha256": "3331611074ff677d851280a678f28e91429686ae908a0a44e56226b62e427999"
+    },
+    {
+      "file": "Bonsai-Local-0.2.0-source.zip",
+      "bytes": 39501664,
+      "MB_decimal": 39.502,
+      "MiB_binary": 37.672,
+      "sha256": "f8c864669ba7b334e403c955747557fff40d97ab4fd8aa004911a4127ff3ee5e"
+    },
+    {
+      "file": "Bonsai-model-Apache-2.0.txt",
+      "bytes": 10174,
+      "MB_decimal": 0.01,
+      "MiB_binary": 0.01,
+      "sha256": "69849221bfb90053de2134ef5e6d540287b4b98062326492f1f96f5da685524b"
+    },
+    {
+      "file": "Bonsai-model-NOTICE.txt",
+      "bytes": 409,
+      "MB_decimal": 0.0,
+      "MiB_binary": 0.0,
+      "sha256": "316012fa6094c03c7b0600bec258bffb675a9261d86f37bc86e15763a1fabc99"
+    },
+    {
+      "file": "GPL-3.0.txt",
+      "bytes": 35149,
+      "MB_decimal": 0.035,
+      "MiB_binary": 0.034,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 35149,
+      "MB_decimal": 0.035,
+      "MiB_binary": 0.034,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "file": "LICENSES.md",
+      "bytes": 1097,
+      "MB_decimal": 0.001,
+      "MiB_binary": 0.001,
+      "sha256": "f63210d1e6348dc6ec6cdc373cc52a75fbd951d17483a30ab6a2e2b836176ac2"
+    },
+    {
+      "file": "PROGRESS.md",
+      "bytes": 3788,
+      "MB_decimal": 0.004,
+      "MiB_binary": 0.004,
+      "sha256": "31ea6d3711ab79ae5d81f0a757410f73efc0dc6417022c667cb07f05b85d4736"
+    },
+    {
+      "file": "README.md",
+      "bytes": 4391,
+      "MB_decimal": 0.004,
+      "MiB_binary": 0.004,
+      "sha256": "419297bf17aecc93fdae00bb7ab3ce2afb4453b24db924c6cbfb55f9d284d70d"
+    },
+    {
+      "file": "TEST_PLAN.md",
+      "bytes": 1888,
+      "MB_decimal": 0.002,
+      "MiB_binary": 0.002,
+      "sha256": "b97d67fdeba91c95c83147e6a0322f62aef8e2ba7121f722cd3c8038e4e95bd4"
+    },
+    {
+      "file": "THIRD_PARTY.txt",
+      "bytes": 1534,
+      "MB_decimal": 0.002,
+      "MiB_binary": 0.001,
+      "sha256": "1f6e8130ebd75956f5fe23563a89ea119d1d995255a89eb230f218c8ffc14c65"
+    },
+    {
+      "file": "dependencies.json",
+      "bytes": 1067,
+      "MB_decimal": 0.001,
+      "MiB_binary": 0.001,
+      "sha256": "0fdaef6d24a6517045575477a0dfae07a6c304e712a34657def24ffcb54d971b"
+    },
+    {
+      "file": "llama-MIT.txt",
+      "bytes": 1078,
+      "MB_decimal": 0.001,
+      "MiB_binary": 0.001,
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+    },
+    {
+      "file": "source-validation.json",
+      "bytes": 516,
+      "MB_decimal": 0.001,
+      "MiB_binary": 0.0,
+      "sha256": "8cf964e9065cf7dfab6935cec4632aa5c795b8230d85167248d9e7f540fae5bc"
+    },
+    {
+      "file": "standalone-validation.json",
+      "bytes": 1467,
+      "MB_decimal": 0.001,
+      "MiB_binary": 0.001,
+      "sha256": "741f341dbe5172c022ff3a9cace550a18035349a3d32e9ec80a2c3e965415d81"
+    }
+  ]
+}

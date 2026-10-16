@@ -1,0 +1,22 @@
+{
+  "version": "0.2.1-preview",
+  "ui_language": "English only",
+  "small_and_bundled_release_build": "PASS",
+  "release_jvm_tests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "small_release_lint": {
+    "errors": 0,
+    "warnings": 10
+  },
+  "both_apk_signature_permission_jni_arm64_16k_checks": "PASS",
+  "bundled_official_q2_checksum": "PASS",
+  "ui_source_and_current_public_copy_no_japanese": "PASS",
+  "multilingual_test_json": "Decoded data preserved; Unicode escapes only",
+  "device_tests": "NOT RUN",
+  "phone_performance": "NOT MEASURED",
+  "signing": "Existing Android development identity; non-debuggable preview",
+  "small_bytes": 28926088,
+  "bundled_bytes": 575616226
+}

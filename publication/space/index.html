@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bonsai Local: fully offline Ternary Bonsai 2 2B inference on Android. APK, source code and owner-reported Redmi Note 13 5G observations.">
+  <meta name="color-scheme" content="dark light">
+  <title>Bonsai Local — Offline AI on Android · GDA Labs</title>
+  <style>
+    :root { color-scheme: dark; --bg:#101710; --panel:#192319; --line:#344334; --text:#edf3e9; --muted:#b6c5b0; --accent:#b8df9c; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 system-ui,sans-serif; }
+    a { color:var(--accent); text-underline-offset:4px; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
+    .wrap { max-width:1040px; margin:auto; padding:0 28px; }
+    header { padding:27px 0; border-bottom:1px solid var(--line); }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+    .brand { font-weight:750; letter-spacing:.02em; }
+    nav a { margin-left:18px; color:var(--muted); font-size:.9rem; }
+    .hero { padding:78px 0 48px; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; font-size:.75rem; font-weight:700; letter-spacing:.16em; }
+    h1 { max-width:850px; margin:20px 0; font-size:clamp(2.65rem,7vw,5rem); line-height:1.08; letter-spacing:-.05em; }
+    h1 span { color:var(--accent); }
+    .intro { max-width:720px; color:var(--muted); font-size:1.15rem; }
+    .actions { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin:30px 0 16px; }
+    .button { display:inline-block; padding:13px 21px; border:1px solid var(--accent); border-radius:9px; font-weight:650; text-decoration:none; }
+    .primary { background:var(--accent); color:#142110; }
+    .fine { font-size:.85rem; color:var(--muted); }
+    section { padding:36px 0; border-top:1px solid var(--line); }
+    h2 { font-size:1.7rem; letter-spacing:-.025em; line-height:1.3; margin:0 0 18px; }
+    h3 { font-size:1.1rem; margin:0 0 10px; }
+    p { max-width:850px; overflow-wrap:anywhere; }
+    .metrics { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:25px 0; }
+    .metric { padding:25px 20px; background:var(--panel); border:1px solid var(--line); border-radius:12px; }
+    .metric strong { display:block; font-size:2.15rem; line-height:1.3; color:var(--accent); }
+    .metric span { font-size:.9rem; color:var(--muted); }
+    .note { padding:18px 22px; border-left:3px solid var(--accent); background:var(--panel); }
+    .columns { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+    .flow { padding:17px 20px; border:1px solid var(--line); border-radius:9px; font-family:ui-monospace,monospace; font-size:.92rem; }
+    li { margin:8px 0; }
+    footer { padding:35px 0; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; }
+    @media(max-width:620px) { .wrap { padding:0 20px; } .hero { padding-top:45px; } .metrics,.columns { grid-template-columns:1fr; } .metric { padding:18px 20px; } nav a { margin-left:0; margin-right:14px; } }
+    @media(prefers-color-scheme:light) { :root { color-scheme:light; --bg:#f5f7f0; --panel:#e9efe3; --line:#c7d3bf; --text:#182418; --muted:#4f624a; --accent:#39632b; } .primary { color:#fff; } }
+  </style>
+</head>
+<body>
+  <header><nav class="wrap" aria-label="Main navigation"><div class="brand">Bonsai Local <span class="fine">/ GDA Labs</span></div><div><a href="#phone">Phone report</a><a href="#start">Get started</a><a href="#engine">Under the hood</a></div></nav></header>
+  <main class="wrap">
+    <div class="hero">
+      <div class="eyebrow">Android ARM64 · Experimental preview · October 17, 2026</div>
+      <h1>Small model.<br><span>Runs on your phone.</span></h1>
+      <p class="intro">Ternary Bonsai 2 2B, running locally on Android. The practical result: offline AI on a Redmi Note 13 5G with 6 GB of physical RAM.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/gdalabs/bonsai-local-android/releases/download/v0.2.2-preview/Bonsai-Local-0.2.2-arm64-Q2_0-bundled-preview.apk">Download APK · 575.6 MB</a>
+        <a class="button" href="https://github.com/gdalabs/bonsai-local-android">Source on GitHub</a>
+      </div>
+      <p class="fine">Official Q2_0 model included. Android 9+ / ARM64. Development-signed preview. This page distributes the app; inference runs on the phone.</p>
+    </div>
+    <section id="phone">
+      <div class="eyebrow">Owner-reported offline observation</div>
+      <h2>An everyday Android phone. Local inference.</h2>
+      <p>Device: <strong>Redmi Note 13 5G</strong> · Android 14 · <strong>6 GB physical RAM</strong>. The owner reports offline operation, including airplane-mode use.</p>
+      <div class="metrics">
+        <div class="metric"><strong>4.51 <small>tok/s</small></strong><span>Generation speed</span></div>
+        <div class="metric"><strong>2.8 <small>s</small></strong><span>Time to first token</span></div>
+        <div class="metric"><strong>832 <small>MiB</small></strong><span>Peak process memory</span></div>
+      </div>
+      <div class="note">Reported output limit: <strong>256 tokens</strong>. These are owner-reported observations, not an independently reproduced or multi-run benchmark. Exact app version, model format, prompt, thread count, context and thermal conditions were not recorded. Process peak memory is not model-only memory or a minimum RAM requirement. <a href="device-report.json">Read the report</a>.</div>
+      <p class="fine">The downloadable 0.2.2 preview defaults to 512 output tokens. It has not been measured in this reported session. The supplied APK contains Q2_0; the earlier report's model format is unconfirmed.</p>
+    </section>
+    <section id="start">
+      <h2>Install. Load. Chat offline.</h2>
+      <div class="columns"><div>
+        <ol><li>Install the model-bundled APK.</li><li>Wait for the local model copy and checksum check.</li><li>Tap <strong>Load model &amp; start</strong>.</li><li>Chat locally. No account or cloud connection is needed.</li></ol>
+        <p class="fine">Allow space for the APK, a private model copy and installer/history overhead. APK size is not installed size.</p>
+      </div><div>
+        <h3>Bring your own local model</h3>
+        <p>Prefer a smaller download? The <a href="https://github.com/gdalabs/bonsai-local-android/releases/download/v0.2.2-preview/Bonsai-Local-0.2.2-arm64-small-preview.apk">28.9 MB small APK</a> imports a supported GGUF from local storage. The app never downloads models.</p>
+        <p>Streaming responses, Stop, English UI, encrypted local history and adjustable output limits are included.</p>
+      </div></div>
+    </section>
+    <section id="engine">
+      <h2>Built on PrismML. Integrated for Android.</h2>
+      <p>PrismML <a href="https://prismml.com/news/bonsai-2-family">announced the 2B model on October 15, 2026</a>. Within days, GDA Labs had an Android application and a real-device offline report. This is an early Android implementation, with no world-first or earliest-port claim.</p>
+      <p class="flow">Kotlin / Compose → JNI → C++ adapter → PrismML llama.cpp → official GGUF</p>
+      <p>The pinned PrismML fork is compiled for ARM64 with Android NDK, without modifying the upstream checkout. Its backend supplies ternary operators, Hadamard transforms, hybrid attention and applicable ARM NEON kernels. GDA Labs built the application and integration. The app uses CPU inference directly, with no local HTTP server, Vulkan or cloud endpoint.</p>
+      <p>No INTERNET permission, telemetry, advertising or account is included. The source, <a href="BUILD.md">build instructions</a>, <a href="PROGRESS.md">test status</a>, <a href="artifact-inventory.json">artifact inventory</a> and <a href="SHA256SUMS">checksums</a> are provided.</p>
+    </section>
+    <section>
+      <h2>A working preview, with clear limits.</h2>
+      <p>Both 0.2.2 Release APKs passed build and signature, package, permission, ARM64 and 16 KiB checks. The Release JVM suite passed 15 tests; small-APK lint reported 0 errors and 10 warnings. New-build physical-device UI/inference testing, production signing, multilingual accuracy and battery/thermal evaluation remain pending.</p>
+      <p>Long responses can reach the output budget. Choose 256, 512 or 1024 tokens on Chat for the next reply; prompt and output must fit the context. A larger limit does not guarantee a complete or accurate answer.</p>
+      <p>Local encryption does not protect against every threat, including a compromised or unlocked phone. This preview has not been independently security-audited.</p>
+    </section>
+  </main>
+  <footer><div class="wrap"><strong>GDA Labs</strong> · Unofficial Android application. No PrismML affiliation or endorsement is implied.<br>App: GPL-3.0-only · Runtime: MIT · Official model: Apache-2.0. <a href="LICENSES.md">Notices</a> · <a href="https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf">Original model</a></div></footer>
+</body>
+</html>

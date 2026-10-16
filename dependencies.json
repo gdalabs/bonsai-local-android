@@ -1,0 +1,36 @@
+{
+  "prism_llama_cpp": {
+    "url": "https://github.com/PrismML-Eng/llama.cpp",
+    "commit": "5ae2e169eac202d2f065606539c3ad6ab8b51333",
+    "license": "MIT"
+  },
+  "bonsai_demo": {
+    "url": "https://github.com/PrismML-Eng/Bonsai-demo",
+    "commit": "db871ea96bffff5ce5609873c412b75d7cd5ba3c",
+    "license": "Apache-2.0",
+    "use": "research only"
+  },
+  "official_model": {
+    "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf",
+    "revision": "683f7be2629342a50987627b40881e54761a2430",
+    "license": "Apache-2.0"
+  },
+  "jdk": "17",
+  "gradle": "8.14.3",
+  "agp": "8.13.2",
+  "kotlin": "2.2.10",
+  "compileSdk": 36,
+  "targetSdk": 36,
+  "minSdk": 28,
+  "ndk": "28.2.13676358",
+  "cmake": "3.31.6",
+  "abi": "arm64-v8a",
+  "compose_bom": "2025.08.00",
+  "coroutines": "1.10.2",
+  "known_good_reference": {
+    "release": "prism-b10777-e3de715",
+    "asset": "llama-prism-b10777-e3de715-bin-ubuntu-x64.tar.gz",
+    "sha256": "3f97b6fbec0065fede2be92f05df531c1050636fc2613e1ba0d975249df19713",
+    "use": "desktop output reference only"
+  }
+}

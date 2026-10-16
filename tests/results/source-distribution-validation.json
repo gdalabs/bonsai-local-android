@@ -1,0 +1,10 @@
+{
+  "source_zip_sha256": "f8c864669ba7b334e403c955747557fff40d97ab4fd8aa004911a4127ff3ee5e",
+  "zip_crc_and_path_validation": "PASS",
+  "app_mesh_and_derivative_subsystems_excluded": true,
+  "vendored_native_source_checksum_verification": "PASS",
+  "exported_source_android_cmake_configuration": "BUILD SUCCESSFUL",
+  "git_build_info_warning": "Expected for source snapshot without .git; source pin/checksums retained",
+  "independent_full_apk_rebuild": "NOT RUN",
+  "new_package_phone_instrumentation": "NOT RUN"
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "Inherited native core, JNI package exports intentionally differ",
+  "core": {
+    "runtime.cpp": {
+      "sha256": "188eb2e54cced8f2fe08b7d0a740290eb1d5ddee348259b9785650d9c7d1a2f9",
+      "byte_identical_to_parent": true
+    },
+    "runtime.h": {
+      "sha256": "6163c1abe03b0715bc2d66a992348ccc5a2b8376be48a19d1bf060b5afe70db1",
+      "byte_identical_to_parent": true
+    }
+  },
+  "jni": {
+    "sha256": "d3c0bdb3d0073162ecf5ff18fade6febd3104daedb88d8f6ca610e3b92c393c7",
+    "only_export_package_names_changed": true
+  },
+  "engine_interface": {
+    "sha256": "8c4a4ac54f3e9b246a3cc943aef22819ea4cf334ee538301b370a77d0187f1b8",
+    "only_package_name_changed": true
+  }
+}

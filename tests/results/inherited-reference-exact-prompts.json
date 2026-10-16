@@ -1,0 +1,46 @@
+{
+  "scope": "Host CPU normalized text comparison, not full-logit equivalence or phone validation",
+  "settings": {
+    "context": 2048,
+    "threads": 2,
+    "temperature": 0.0,
+    "top_p": 0.8,
+    "top_k": 20,
+    "seed": 42,
+    "thinking": false,
+    "presence_penalty": 1.5,
+    "max_tokens": 64
+  },
+  "results": [
+    {
+      "prompt_index": 0,
+      "prompt": "What is 2 + 2? Answer with just the number.",
+      "rendered_prompt": "<|im_start|>user\nWhat is 2 + 2? Answer with just the number.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "native_exit": 0,
+      "reference_exit": 0,
+      "native_output": "4",
+      "reference_output": "4",
+      "equal_normalized_text": true
+    },
+    {
+      "prompt_index": 1,
+      "prompt": "Translate into Japanese: The train leaves at noon.",
+      "rendered_prompt": "<|im_start|>user\nTranslate into Japanese: The train leaves at noon.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "native_exit": 0,
+      "reference_exit": 0,
+      "native_output": "\u5348\u524d\u4e2d\u304b\u3089\u5217\u8eca\u304c departure \u3057\u307e\u3059\u3002\n\n\uff08\u3088\u308a\u81ea\u7136\u306a\u8868\u73fe\uff1a\u5348\u5f8c\u306e\u5217\u8eca\u306f departing \u3067\u3059\u3002\uff09\n\n\u300c\u5348\u5f8c\u306e\u5217\u8eca\u306f departure \u3057\u307e\u3059\u3002\u300d",
+      "reference_output": "\u5348\u524d\u4e2d\u304b\u3089\u5217\u8eca\u304c departure \u3057\u307e\u3059\u3002\n\n\uff08\u3088\u308a\u81ea\u7136\u306a\u8868\u73fe\uff1a\u5348\u5f8c\u306e\u5217\u8eca\u306f departing \u3067\u3059\u3002\uff09\n\n\u300c\u5348\u5f8c\u306e\u5217\u8eca\u306f departure \u3057\u307e\u3059\u3002\u300d",
+      "equal_normalized_text": true
+    },
+    {
+      "prompt_index": 2,
+      "prompt": "Explain in two sentences why the sky is blue.",
+      "rendered_prompt": "<|im_start|>user\nExplain in two sentences why the sky is blue.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "native_exit": 0,
+      "reference_exit": 0,
+      "native_output": "Sunlight contains all colors of the rainbow, but when it travels through Earth's atmosphere, shorter wavelengths (like blue) are scattered more strongly by gas molecules than longer wavelengths (like red). This process is known as Rayleigh scattering, which makes the sky appear blue to our eyes.",
+      "reference_output": "Sunlight contains all colors of the rainbow, but when it travels through Earth's atmosphere, shorter wavelengths (like blue) are scattered more strongly by gas molecules than longer wavelengths (like red). This process is known as Rayleigh scattering, which makes the sky appear blue to our eyes.",
+      "equal_normalized_text": true
+    }
+  ]
+}

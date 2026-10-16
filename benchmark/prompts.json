@@ -1,0 +1,8 @@
+{
+  "settings": {"context": 2048, "threads": 2, "temperature": 0.0, "top_p": 0.8, "top_k": 20, "seed": 42, "thinking": false, "presence_penalty": 1.5, "max_tokens": 64},
+  "prompts": [
+    "What is 2 + 2? Answer with just the number.",
+    "Translate into Japanese: The train leaves at noon.",
+    "Explain in two sentences why the sky is blue."
+  ]
+}

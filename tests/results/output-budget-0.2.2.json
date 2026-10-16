@@ -1,0 +1,35 @@
+{
+  "version": "0.2.2-preview",
+  "default_output_tokens": 512,
+  "chat_output_choices": [
+    256,
+    512,
+    1024
+  ],
+  "native_core": "Unchanged from 0.2.1; fixed unmodified PrismML backend",
+  "small_and_bundled_release_build": "PASS",
+  "release_jvm_tests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "small_release_lint": {
+    "errors": 0,
+    "warnings": 10
+  },
+  "both_apk_signature_permission_jni_arm64_16k_checks": "PASS",
+  "bundled_official_model_checksum": "PASS",
+  "new_apk_device_tests": "NOT RUN",
+  "reported_phone_metrics": "See benchmark/redmi-note-13-user-report.json; app version unknown, not new build measurements",
+  "artifacts": [
+    {
+      "file": "small.apk",
+      "bytes": 28926088,
+      "sha256": "0b03f0773e00dcdcef11a54cf552c9e06402ff5db6a14cdbbb52cd7069e39db3"
+    },
+    {
+      "file": "android-app-release.apk",
+      "bytes": 575616226,
+      "sha256": "e55ae2e70a391e2f7060f97d6c7b236a766cf9bec051f8a97594f4bfe5913286"
+    }
+  ]
+}

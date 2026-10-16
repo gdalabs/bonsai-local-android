@@ -1,0 +1,19 @@
+{
+  "name": "Official Ternary Bonsai 2 2B PQ2_0",
+  "version": "683f7be2629342a50987627b40881e54761a2430",
+  "base_architecture": "qwen35",
+  "gguf_format": "PQ2_0",
+  "sha256": "d5f01a4ecaf49239653308ee732ad1a0c5f802c0ddb997549fc7b694c8b45928",
+  "size_bytes": 517312992,
+  "required_backend": "prism-5ae2e169-cpu",
+  "chat_template": "embedded",
+  "context_length": 4096,
+  "special_tokens": [
+    "<|im_start|>",
+    "<|im_end|>",
+    "<think>",
+    "</think>"
+  ],
+  "provenance": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf/tree/683f7be2629342a50987627b40881e54761a2430",
+  "trained_context_length": 262144
+}

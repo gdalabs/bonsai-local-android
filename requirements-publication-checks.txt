@@ -1,0 +1,2 @@
+# Optional developer browser checks; not an Android dependency.
+playwright==1.59.0

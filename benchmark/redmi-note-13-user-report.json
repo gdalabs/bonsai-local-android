@@ -1,0 +1,20 @@
+{
+  "source": "Owner-reported observation in conversation; not independently reproduced",
+  "device": "Xiaomi Redmi Note 13 5G",
+  "android_version": "14 (previously reported)",
+  "physical_ram_gb": 6,
+  "environment": "Offline",
+  "app_version": null,
+  "model_format": null,
+  "generation_tokens_per_second": 4.51,
+  "time_to_first_token_seconds": 2.8,
+  "peak_process_memory_mib": 832,
+  "configured_max_output_tokens": 256,
+  "observation": "Long response stopped with output-limit warning",
+  "prompt": null,
+  "context_length": null,
+  "threads": null,
+  "thinking_mode": null,
+  "number_of_runs": null,
+  "limitations": "Version, model, settings and raw logs are unconfirmed. Process high-water RSS is not model-only memory or proof of total device RAM requirements."
+}

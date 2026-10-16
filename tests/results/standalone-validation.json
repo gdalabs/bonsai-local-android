@@ -1,0 +1,44 @@
+{
+  "scope": "Fresh standalone build and JVM checks; device instrumentation not executed",
+  "application_id": "org.gdalabs.bonsailocal",
+  "debug_build": "BUILD SUCCESSFUL",
+  "unit_suites": [
+    {
+      "name": "org.gdalabs.bonsailocal.ModelImportTest",
+      "tests": "15",
+      "failures": "0",
+      "errors": "0"
+    }
+  ],
+  "lint_severities": {
+    "Warning": 10
+  },
+  "native_core": "inherited unchanged, see core-source-identity.json",
+  "preview_signing": "Android debug identity; distribution release build is configured non-debuggable",
+  "hub_authentication": "No authenticated standard client session; nothing uploaded",
+  "release_build": "BUILD SUCCESSFUL, small and official Q2_0 bundled",
+  "release_unit_suites": [
+    {
+      "name": "org.gdalabs.bonsailocal.ModelImportTest",
+      "tests": "15",
+      "failures": "0",
+      "errors": "0"
+    }
+  ],
+  "release_lint_severities": {
+    "Warning": 10
+  },
+  "android_test_apk": "compiled, device tests not executed",
+  "application_source_commit": "f750fef",
+  "packaged_checks": {
+    "small_release": "PASS",
+    "bundled_release": "PASS",
+    "package_and_jni": "org.gdalabs.bonsailocal, all eight JNI exports match",
+    "arm64_16k_elf_zip": true,
+    "debuggable": false,
+    "internet_bluetooth_location_broad_storage_permissions": false,
+    "bundled_gguf_sha256_and_official_manifest_match": true,
+    "required_license_assets_present": true,
+    "apksigner_verify": "both pass"
+  }
+}
