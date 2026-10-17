@@ -44,3 +44,8 @@ The owner created a public model-type application distribution repository and th
 The owner selected Apache-2.0 for GDA Labs application code. Version 0.2.3 rebuilds both APKs with the application license/NOTICE and removes the old application GPL asset. Runtime MIT and model Apache-2.0/NOTICE remain byte-identical. Earlier 0.2.2 artifacts retain their historical terms. Both builds, 15 Release JVM tests, small lint (0 errors/10 warnings), APK/source version matching and packaged license/signature/permission/JNI/ARM64/16 KiB checks passed. No new phone measurements were performed.
 
 The actual HF model-type repository https://huggingface.co/GDALabs/Bonsai-2-2B-Local-Android was confirmed public with Apache-2.0 metadata and only README.md/.gitattributes before the owner uploads the new files. The primary handoff is Bonsai-Local-0.2.3-HF-upload.zip for that repository; it is not the older Space-specific ZIP. Extract and upload the contents. Standard API authentication in this environment has not been established; the agent has not uploaded files to HF.
+
+
+## Published Apache preview handoff
+
+Release https://github.com/gdalabs/bonsai-local-android/releases/tag/v0.2.3-preview is public with all six assets uploaded. Both APK server digests match the tested artifacts. The HF upload ZIP includes the approved formal name **Bonsai 2 2B Local for Android**, Apache application notices, corresponding source and links to https://huggingface.co/GDALabs/Bonsai-2-2B-Local-Android . Every enclosed SHA256SUMS entry passed. The HF repository is public with Apache-2.0 metadata, but application files still require manual upload; extract the ZIP and upload its contents. The app label remains Bonsai Local. No new Android-device test or HF Post publication is claimed.
