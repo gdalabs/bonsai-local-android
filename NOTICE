@@ -1,0 +1,10 @@
+Bonsai Local for Android
+Copyright 2026 GDA Labs
+
+GDA Labs application code is available under the Apache License, Version 2.0.
+This notice does not change the licenses or ownership of third-party components.
+
+PrismML llama.cpp: MIT; see docs/notices/llama-MIT.txt.
+Official Ternary Bonsai 2 2B model: Apache-2.0; see the model license and NOTICE.
+Created using Bonsai by Prism ML.
+This independent application is not affiliated with or endorsed by PrismML.

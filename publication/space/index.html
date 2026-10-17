@@ -51,7 +51,7 @@
       <h1>Small model.<br><span>Runs on your phone.</span></h1>
       <p class="intro">Ternary Bonsai 2 2B, running locally on Android. The practical result: offline AI on a Redmi Note 13 5G with 6 GB of physical RAM.</p>
       <div class="actions">
-        <a class="button primary" href="https://github.com/gdalabs/bonsai-local-android/releases/download/v0.2.2-preview/Bonsai-Local-0.2.2-arm64-Q2_0-bundled-preview.apk">Download APK · 575.6 MB</a>
+        <a class="button primary" href="https://github.com/gdalabs/bonsai-local-android/releases/download/v0.2.3-preview/Bonsai-Local-0.2.3-arm64-Q2_0-bundled-preview.apk">Download APK · 575.6 MB</a>
         <a class="button" href="https://github.com/gdalabs/bonsai-local-android">Source on GitHub</a>
       </div>
       <p class="fine">Official Q2_0 model included. Android 9+ / ARM64. Development-signed preview. This page distributes the app; inference runs on the phone.</p>
@@ -66,7 +66,7 @@
         <div class="metric"><strong>832 <small>MiB</small></strong><span>Peak process memory</span></div>
       </div>
       <div class="note">Reported output limit: <strong>256 tokens</strong>. These are owner-reported observations, not an independently reproduced or multi-run benchmark. Exact app version, model format, prompt, thread count, context and thermal conditions were not recorded. Process peak memory is not model-only memory or a minimum RAM requirement. <a href="device-report.json">Read the report</a>.</div>
-      <p class="fine">The downloadable 0.2.2 preview defaults to 512 output tokens. It has not been measured in this reported session. The supplied APK contains Q2_0; the earlier report's model format is unconfirmed.</p>
+      <p class="fine">The downloadable 0.2.3 preview defaults to 512 output tokens. It has not been measured in this reported session. The supplied APK contains Q2_0; the earlier report's model format is unconfirmed.</p>
     </section>
     <section id="start">
       <h2>Install. Load. Chat offline.</h2>
@@ -75,7 +75,7 @@
         <p class="fine">Allow space for the APK, a private model copy and installer/history overhead. APK size is not installed size.</p>
       </div><div>
         <h3>Bring your own local model</h3>
-        <p>Prefer a smaller download? The <a href="https://github.com/gdalabs/bonsai-local-android/releases/download/v0.2.2-preview/Bonsai-Local-0.2.2-arm64-small-preview.apk">28.9 MB small APK</a> imports a supported GGUF from local storage. The app never downloads models.</p>
+        <p>Prefer a smaller download? The <a href="https://github.com/gdalabs/bonsai-local-android/releases/download/v0.2.3-preview/Bonsai-Local-0.2.3-arm64-small-preview.apk">28.9 MB small APK</a> imports a supported GGUF from local storage. The app never downloads models.</p>
         <p>Streaming responses, Stop, English UI, encrypted local history and adjustable output limits are included.</p>
       </div></div>
     </section>
@@ -88,11 +88,11 @@
     </section>
     <section>
       <h2>A working preview, with clear limits.</h2>
-      <p>Both 0.2.2 Release APKs passed build and signature, package, permission, ARM64 and 16 KiB checks. The Release JVM suite passed 15 tests; small-APK lint reported 0 errors and 10 warnings. New-build physical-device UI/inference testing, production signing, multilingual accuracy and battery/thermal evaluation remain pending.</p>
+      <p>Both 0.2.3 Release APKs passed build and signature, package, permission, ARM64 and 16 KiB checks. The Release JVM suite passed 15 tests; small-APK lint reported 0 errors and 10 warnings. New-build physical-device UI/inference testing, production signing, multilingual accuracy and battery/thermal evaluation remain pending.</p>
       <p>Long responses can reach the output budget. Choose 256, 512 or 1024 tokens on Chat for the next reply; prompt and output must fit the context. A larger limit does not guarantee a complete or accurate answer.</p>
       <p>Local encryption does not protect against every threat, including a compromised or unlocked phone. This preview has not been independently security-audited.</p>
     </section>
   </main>
-  <footer><div class="wrap"><strong>GDA Labs</strong> · Unofficial Android application. No PrismML affiliation or endorsement is implied.<br>App: GPL-3.0-only · Runtime: MIT · Official model: Apache-2.0. <a href="LICENSES.md">Notices</a> · <a href="https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf">Original model</a></div></footer>
+  <footer><div class="wrap"><strong>GDA Labs</strong> · Unofficial Android application. No PrismML affiliation or endorsement is implied.<br>App: Apache-2.0 · Runtime: MIT · Official model: Apache-2.0. <a href="LICENSES.md">Notices</a> · <a href="https://huggingface.co/prism-ml/Ternary-Bonsai-2-2B-gguf">Original model</a></div></footer>
 </body>
 </html>

@@ -1,5 +1,6 @@
 Bonsai Local — GDA Labs
-Application: GPL-3.0-only. See GPL-3.0.txt and the accompanying source archive.
+Application: Apache-2.0. Copyright 2026 GDA Labs.
+See Bonsai-Local-Apache-2.0.txt and Bonsai-Local-NOTICE.txt.
 
 PrismML llama.cpp (MIT), commit 5ae2e169eac202d2f065606539c3ad6ab8b51333
 MIT License

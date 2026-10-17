@@ -23,6 +23,8 @@ No local HTTP server, account, cloud inference, telemetry or INTERNET permission
 
 The current preview includes an English interface, local GGUF import and adjustable output limits. The bundled APK includes official **Q2_0** weights; that download format should not be interpreted as confirmation of the model format used in the earlier phone observation. Model formats and file size are separate from APK size, process memory and installed storage.
 
+Application code is Apache-2.0 starting with 0.2.3. PrismML llama.cpp remains MIT, and official model weights remain Apache-2.0 with upstream notices.
+
 This is a working preview with development signing. The latest build and its output-limit controls still need device validation; multilingual accuracy, battery use and thermal behavior remain to be measured.
 
 Thank you to PrismML and the llama.cpp contributors for the model and inference foundation.
@@ -33,6 +35,6 @@ Official release announcement: https://prismml.com/news/bonsai-2-family
 
 Source code and APK releases: https://github.com/gdalabs/bonsai-local-android
 
-Project page: https://huggingface.co/spaces/GDALabs/Bonsai-Local-Android
+Project page: https://huggingface.co/GDALabs/Bonsai-Local-Android
 
 #Bonsai2 #Android #OnDeviceAI #LocalLLM #TernaryAI #OpenSourceAI

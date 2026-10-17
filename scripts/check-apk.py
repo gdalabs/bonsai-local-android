@@ -22,10 +22,19 @@ assert "android.permission.INTERNET" not in permissions, permissions
 assert not any(p in permissions for p in ["android.permission.BLUETOOTH", "android.permission.ACCESS_FINE_LOCATION", "android.permission.MANAGE_EXTERNAL_STORAGE"]), permissions
 badging = subprocess.check_output([str(aapt), "dump", "badging", str(args.apk)], text=True)
 assert "package: name='org.gdalabs.bonsailocal'" in badging, badging[:500]
+source_root = pathlib.Path(__file__).resolve().parents[1]
+build_settings = (source_root / "android-app/build.gradle.kts").read_text()
+expected_name = re.search(r'versionName = "([^"]+)"', build_settings).group(1)
+expected_code = re.search(r'versionCode = (\d+)', build_settings).group(1)
+assert "versionName='" + expected_name in badging, "APK/source version mismatch"
+assert "versionCode='" + expected_code + "'" in badging, "APK/source version code mismatch"
 if args.release:
     assert "application-debuggable" not in badging, "Release APK is debuggable"
 with zipfile.ZipFile(args.apk) as notices:
-    assert all("assets/" + name in notices.namelist() for name in ["GPL-3.0.txt", "Bonsai-model-NOTICE.txt", "Bonsai-model-Apache-2.0.txt", "llama-MIT.txt"]), "Missing license notices"
+    assert all("assets/" + name in notices.namelist() for name in ["Bonsai-Local-Apache-2.0.txt", "Bonsai-Local-NOTICE.txt", "Bonsai-model-NOTICE.txt", "Bonsai-model-Apache-2.0.txt", "llama-MIT.txt"]), "Missing license notices"
+    assert "assets/GPL-3.0.txt" not in notices.namelist(), "Stale application GPL notice"
+    assert notices.read("assets/Bonsai-Local-Apache-2.0.txt") == (pathlib.Path(__file__).resolve().parents[1] / "LICENSE").read_bytes(), "Application license differs from source"
+    assert b"Copyright 2026 GDA Labs" in notices.read("assets/Bonsai-Local-NOTICE.txt"), "Missing app attribution"
 with zipfile.ZipFile(args.apk) as apk:
     libs = [n for n in apk.namelist() if n.startswith("lib/") and n.endswith(".so")]
     assert "lib/arm64-v8a/libmeshmind.so" in libs, libs

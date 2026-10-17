@@ -19,10 +19,11 @@ for line in (args.folder / 'SHA256SUMS').read_text().splitlines():
         while chunk := stream.read(1024 * 1024):
             value.update(chunk)
     assert value.hexdigest() == expected, 'Checksum mismatch: ' + name
-required = {'README.md', 'index.html', 'LICENSE', 'LICENSES.md', 'device-report.json',
-            'Bonsai-Local-0.2.2-source.zip', 'Bonsai-Local-0.2.2-arm64-Q2_0-bundled-preview.apk'}
+required = {'README.md', 'index.html', 'LICENSE', 'NOTICE', 'LICENSES.md', 'device-report.json',
+            'Bonsai-Local-0.2.3-source.zip', 'Bonsai-Local-0.2.3-arm64-Q2_0-bundled-preview.apk'}
 assert all((args.folder / name).is_file() for name in required)
 assert 'sdk: static' in (args.folder / 'README.md').read_text()
+assert 'license: apache-2.0' in (args.folder / 'README.md').read_text(), 'Wrong application license metadata'
 allowed = {line.split('  ', 1)[1] for line in (args.folder / 'SHA256SUMS').read_text().splitlines()}
 assert {path.name for path in args.folder.iterdir()} == allowed | {'SHA256SUMS', 'artifact-inventory.json'}
 print('Space files and checksums verified')

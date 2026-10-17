@@ -31,13 +31,13 @@ def copy(source, target):
             writer.write(chunk)
 
 
-for source, name in [(args.bundled_apk, 'Bonsai-Local-0.2.2-arm64-Q2_0-bundled-preview.apk'),
-                     (args.small_apk, 'Bonsai-Local-0.2.2-arm64-small-preview.apk')]:
+for source, name in [(args.bundled_apk, 'Bonsai-Local-0.2.3-arm64-Q2_0-bundled-preview.apk'),
+                     (args.small_apk, 'Bonsai-Local-0.2.3-arm64-small-preview.apk')]:
     copy(source, args.output / name)
 
 # Explicit application source tree; no ignored build/model/history/experiment data.
 paths = [root / name for name in ['README.md', 'BUILD.md', 'ARCHITECTURE.md', 'TEST_PLAN.md', 'LICENSES.md', 'PROGRESS.md',
-                                  'LICENSE', 'dependencies.json', '.gitignore', '.gitattributes', 'build.gradle.kts', 'settings.gradle.kts',
+                                  'LICENSE', 'NOTICE', 'RELICENSING.md', 'dependencies.json', '.gitignore', '.gitattributes', 'build.gradle.kts', 'settings.gradle.kts',
                                   'gradle.properties', 'gradlew', 'requirements-publication.txt', 'requirements-publication-checks.txt', 'android-app/build.gradle.kts', 'android-app/gradle.lockfile']]
 for directory in ['android-app/src', 'inference', 'model-manager', 'benchmark', 'scripts', 'docs', 'gradle', 'tests', 'publication']:
     paths.extend(p for p in (root / directory).rglob('*') if p.is_file() and '__pycache__' not in p.parts)
@@ -57,7 +57,7 @@ else:
     assert not subprocess.check_output(['git', '-C', str(upstream), 'status', '--porcelain'], text=True).strip()
     tracked = subprocess.check_output(['git', '-C', str(upstream), 'ls-files', '-z']).decode().split('\0')
 assert revision == '5ae2e169eac202d2f065606539c3ad6ab8b51333'
-source_zip = args.output / 'Bonsai-Local-0.2.2-source.zip'
+source_zip = args.output / 'Bonsai-Local-0.2.3-source.zip'
 with zipfile.ZipFile(source_zip, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
     for path in sorted(set(paths)):
         assert not path.is_symlink(), f'Unexpected source link: {path}'
@@ -86,7 +86,7 @@ with zipfile.ZipFile(source_zip, 'a', compression=zipfile.ZIP_DEFLATED) as archi
         info.compress_type = zipfile.ZIP_DEFLATED
         archive.writestr(info, data)
 
-for name in ['BUILD.md', 'ARCHITECTURE.md', 'TEST_PLAN.md', 'LICENSES.md', 'PROGRESS.md', 'LICENSE', 'dependencies.json']:
+for name in ['BUILD.md', 'ARCHITECTURE.md', 'TEST_PLAN.md', 'LICENSES.md', 'PROGRESS.md', 'LICENSE', 'NOTICE', 'RELICENSING.md', 'dependencies.json']:
     copy(root / name, args.output / name)
 for path in (root / 'docs/notices').glob('*.txt'):
     copy(path, args.output / path.name)

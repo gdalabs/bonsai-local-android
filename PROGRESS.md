@@ -66,3 +66,10 @@ Prepared an English announcement, static Space page and checksum-verifying prepa
 
 
 Public distribution completed: gdalabs/bonsai-local-android (PUBLIC, initial cbbc96b), release v0.2.2-preview with six verified uploaded assets. APK hashes match tested 0.2.2 artifacts. New clone native checksums passed; app/native sources match the tested source. Both local static pages passed browser checks at 1440/390/360. gdalabs.dev was deployed through existing Cloudflare Pages project gdalabs-website from website commit af1ac1b; production HTTP 200 confirmed the upper-left link and first card. HF Post is only a public draft and Space is prepared, not uploaded: standard client authentication absent. See docs/HF_PUBLICATION_STATUS.md and tests/results/publication-browser.json. No new Android build or phone measurement was performed for this publication-only change.
+
+
+## 2026-10-17 — Apache-2.0 application release
+
+At the owner's explicit request, changed GDA Labs application licensing to Apache-2.0 for 0.2.3. Added application NOTICE and license assets; preserved PrismML MIT, model Apache-2.0 and model NOTICE byte-for-byte. Updated APK notice checks, repository/HF/static-page metadata and distribution tooling. Native inference and Kotlin behavior are unchanged; only version and license assets change in the APK. Historical GPL releases remain unchanged. Fresh APK builds and packaging validation are pending below.
+
+0.2.3 checks: small and bundled Release builds passed; Release JVM 15/15; small lint 0 errors/10 warnings. Both APKs passed updated Apache license/NOTICE/no-stale-GPL, source-version, signature, package/JNI, permissions, ARM64 and 16 KiB checks. Official bundled model SHA verified; signing identity matches 0.2.2. No inference changes or new phone measurements. See tests/results/apache-release-0.2.3.json.

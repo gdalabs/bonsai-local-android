@@ -21,8 +21,9 @@ for line in (args.folder / 'SHA256SUMS').read_text().splitlines():
         while chunk := source.read(1024 * 1024):
             digest.update(chunk)
     assert digest.hexdigest() == expected, 'Distribution checksum mismatch: ' + name
-for name in ['README.md', 'Bonsai-Local-0.2.2-source.zip', 'Bonsai-Local-0.2.2-arm64-Q2_0-bundled-preview.apk', 'LICENSES.md']:
+for name in ['README.md', 'Bonsai-Local-0.2.3-source.zip', 'Bonsai-Local-0.2.3-arm64-Q2_0-bundled-preview.apk', 'LICENSES.md', 'LICENSE', 'NOTICE']:
     assert (args.folder / name).is_file(), 'Missing distribution file: ' + name
+assert 'license: apache-2.0' in (args.folder / 'README.md').read_text(), 'Wrong application license metadata'
 api = HfApi()
 try:
     info = api.whoami()

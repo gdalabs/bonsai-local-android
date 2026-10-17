@@ -25,3 +25,12 @@ Public presentation is English only, with no creator nationality/location claims
 Use “an early Android implementation,” not a world-first or ranked-priority claim. PrismML already provides Android-capable runtime code; GDA Labs integrates that code into an app. Credit ternary/Hadamard/hybrid kernels to upstream. Separate executed host/build checks from owner reports and unexecuted new-APK device tests. Do not advertise multilingual parity, independently measured phone performance, production signing or security review.
 
 See docs/HF_PUBLICATION_STATUS.md for publication status. The earlier model-repository publisher remains available for historical distribution workflows; the current primary destination is a static Space.
+
+
+## Owner-created model repository
+
+The owner supplied https://huggingface.co/GDALabs/Bonsai-Local-Android as the actual destination. It is a model-type Hub repository used here to distribute an Android app, not newly trained weights. Use the application README from docs/HF_APP_CARD.md, not the static Space README. The optional static Space remains a separate, uncreated destination.
+
+Upload the contents of the 0.2.3 HF-upload ZIP after extracting it. Do not upload the ZIP alone. Keep README.md, APKs, source archive, LICENSE, NOTICE and all upstream notices together. Existing 0.2.2 bundles contain historical GPL application notices and are not the Apache-2.0 upload set.
+
+With standard authentication, use scripts/publish-hf.py with --public. Without it, the owner can upload the prepared files through their signed-in browser. No account secrets should be sent in chat.

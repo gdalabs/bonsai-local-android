@@ -54,3 +54,8 @@ The output-token limit is a generation budget, not a character limit. Reaching i
 ## Contributing
 
 The goal of this first release is a usable, inspectable Android starting point. Contributions are welcome for reproducible ARM64 performance measurements, CPU optimizations, battery/thermal testing, context management and accessibility. Please report the app version, model format/checksum, phone/OS, context, threads, sampling settings, prompt, output count and warm/cold conditions. Keep message history and personal data out of reports. Separate correctness checks from speed measurements; preserve the PrismML source pin and record patches with tests. See TEST_PLAN.md and PROGRESS.md for unverified areas.
+
+
+## License
+
+Application code: **Apache-2.0**, copyright 2026 GDA Labs, starting with 0.2.3. See LICENSE, NOTICE and RELICENSING.md. PrismML llama.cpp remains MIT; official Bonsai model weights remain Apache-2.0 with upstream notices. Versions through 0.2.2 keep their historical GPL-3.0-only application license. No upstream component is relicensed by this change.

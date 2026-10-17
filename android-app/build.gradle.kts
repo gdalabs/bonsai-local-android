@@ -37,8 +37,8 @@ android {
         applicationId = "org.gdalabs.bonsailocal"
         minSdk = 28
         targetSdk = 36
-        versionCode = 4
-        versionName = "0.2.2-preview" + if (bundledModel != null) "-bundled" else ""
+        versionCode = 5
+        versionName = "0.2.3-preview" + if (bundledModel != null) "-bundled" else ""
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         ndk { abiFilters += if (emulatorBuild) "x86_64" else "arm64-v8a" }
         externalNativeBuild { cmake {

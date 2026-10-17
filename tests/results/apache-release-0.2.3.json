@@ -1,0 +1,33 @@
+{
+  "version": "0.2.3-preview",
+  "application_license": "Apache-2.0",
+  "upstream_notices": "MIT runtime / Apache model and model NOTICE unchanged byte-for-byte",
+  "apk_license_assets": "Apache application text and NOTICE present; old GPL application asset absent",
+  "source_apk_version_match": "PASS",
+  "small_and_bundled_release_build": "PASS",
+  "release_jvm_tests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "small_release_lint": {
+    "errors": 0,
+    "warnings": 10
+  },
+  "both_apk_signature_permission_jni_arm64_16k_checks": "PASS",
+  "signing_identity_matches_0.2.2": "PASS",
+  "bundled_model_checksum": "PASS",
+  "inference_source": "Unchanged",
+  "device_tests": "NOT RUN",
+  "artifacts": [
+    {
+      "file": "small.apk",
+      "bytes": 28917976,
+      "sha256": "dc4e6b8646238575c82a0c836795b4560b11145d88d1ccb5353f5f141e64ee35"
+    },
+    {
+      "file": "android-app-release.apk",
+      "bytes": 575608110,
+      "sha256": "9801a13581aec46dbb1adc4eea6d19cf0f0ecf46a27eef28042be87d5b756c0e"
+    }
+  ]
+}
