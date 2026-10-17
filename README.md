@@ -1,4 +1,4 @@
-# Bonsai Local for Android
+# Bonsai 2 2B Local for Android
 
 An independent, fully offline Android app by **GDA Labs**, using official **PrismML Ternary Bonsai 2 2B**. Download an ARM64 APK, load the bundled model, and chat on your phone. No account, internet permission, inference server, analytics or Bluetooth component is included.
 

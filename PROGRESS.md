@@ -73,3 +73,8 @@ Public distribution completed: gdalabs/bonsai-local-android (PUBLIC, initial cbb
 At the owner's explicit request, changed GDA Labs application licensing to Apache-2.0 for 0.2.3. Added application NOTICE and license assets; preserved PrismML MIT, model Apache-2.0 and model NOTICE byte-for-byte. Updated APK notice checks, repository/HF/static-page metadata and distribution tooling. Native inference and Kotlin behavior are unchanged; only version and license assets change in the APK. Historical GPL releases remain unchanged. Fresh APK builds and packaging validation are pending below.
 
 0.2.3 checks: small and bundled Release builds passed; Release JVM 15/15; small lint 0 errors/10 warnings. Both APKs passed updated Apache license/NOTICE/no-stale-GPL, source-version, signature, package/JNI, permissions, ARM64 and 16 KiB checks. Official bundled model SHA verified; signing identity matches 0.2.2. No inference changes or new phone measurements. See tests/results/apache-release-0.2.3.json.
+
+
+## Public name
+
+The owner selected **Bonsai 2 2B Local for Android** as the formal project name. The installed application remains **Bonsai Local**. Existing GitHub and HF repository URLs remain stable. This documentation-only change does not alter the tested APKs.

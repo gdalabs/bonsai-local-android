@@ -15,7 +15,7 @@ short_description: Offline Bonsai 2 2B on Android, with APK and source downloads
 
 Source, issues and APK releases: https://github.com/gdalabs/bonsai-local-android . This static page documents the Android app; inference runs on the phone.
 
-# Bonsai Local — offline Bonsai 2 2B on Android
+# Bonsai 2 2B Local for Android
 
 **Run Bonsai 2 2B locally on your Android phone — with no account or cloud inference.**
 

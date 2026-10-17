@@ -12,7 +12,7 @@ tags:
 - application
 ---
 
-# Bonsai Local — offline Bonsai 2 2B on Android
+# Bonsai 2 2B Local for Android
 
 **Run Bonsai 2 2B locally on your Android phone — with no account or cloud inference.**
 
