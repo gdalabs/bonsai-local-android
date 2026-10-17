@@ -78,3 +78,5 @@ At the owner's explicit request, changed GDA Labs application licensing to Apach
 ## Public name
 
 The owner selected **Bonsai 2 2B Local for Android** as the formal project name. The installed application remains **Bonsai Local**. Existing GitHub and HF repository URLs remain stable. This documentation-only change does not alter the tested APKs.
+
+The owner renamed the HF model repository to https://huggingface.co/GDALabs/Bonsai-2-2B-Local-Android . Publication links and the model-repository uploader now target that exact identifier. GitHub remains bonsai-local-android.

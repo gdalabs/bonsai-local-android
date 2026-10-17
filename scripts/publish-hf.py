@@ -7,10 +7,10 @@ from huggingface_hub import HfApi
 
 parser = argparse.ArgumentParser()
 parser.add_argument('folder', type=Path)
-parser.add_argument('--repo', default='GDALabs/Bonsai-Local-Android')
+parser.add_argument('--repo', default='GDALabs/Bonsai-2-2B-Local-Android')
 parser.add_argument('--public', action='store_true', help='Explicitly publish publicly; default is a private preview')
 args = parser.parse_args()
-assert args.repo == 'GDALabs/Bonsai-Local-Android', 'Review the script before changing the publication destination'
+assert args.repo == 'GDALabs/Bonsai-2-2B-Local-Android', 'Review the script before changing the publication destination'
 assert args.folder.is_dir()
 for line in (args.folder / 'SHA256SUMS').read_text().splitlines():
     expected, name = line.split('  ', 1)

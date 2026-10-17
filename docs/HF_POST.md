@@ -35,6 +35,6 @@ Official release announcement: https://prismml.com/news/bonsai-2-family
 
 Source code and APK releases: https://github.com/gdalabs/bonsai-local-android
 
-Project page: https://huggingface.co/GDALabs/Bonsai-Local-Android
+Project page: https://huggingface.co/GDALabs/Bonsai-2-2B-Local-Android
 
 #Bonsai2 #Android #OnDeviceAI #LocalLLM #TernaryAI #OpenSourceAI

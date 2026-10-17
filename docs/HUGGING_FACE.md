@@ -29,7 +29,7 @@ See docs/HF_PUBLICATION_STATUS.md for publication status. The earlier model-repo
 
 ## Owner-created model repository
 
-The owner supplied https://huggingface.co/GDALabs/Bonsai-Local-Android as the actual destination. It is a model-type Hub repository used here to distribute an Android app, not newly trained weights. Use the application README from docs/HF_APP_CARD.md, not the static Space README. The optional static Space remains a separate, uncreated destination.
+The owner supplied https://huggingface.co/GDALabs/Bonsai-2-2B-Local-Android as the actual destination. It is a model-type Hub repository used here to distribute an Android app, not newly trained weights. Use the application README from docs/HF_APP_CARD.md, not the static Space README. The optional static Space remains a separate, uncreated destination.
 
 Upload the contents of the 0.2.3 HF-upload ZIP after extracting it. Do not upload the ZIP alone. Keep README.md, APKs, source archive, LICENSE, NOTICE and all upstream notices together. Existing 0.2.2 bundles contain historical GPL application notices and are not the Apache-2.0 upload set.
 
